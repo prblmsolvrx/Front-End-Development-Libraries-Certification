@@ -1,0 +1,70 @@
+/* Global variables */
+:root {
+  --main-font: "Roboto Mono", monospace;
+  --title-font: "Bungee", cursive;
+
+  --border-radius: 3px;
+
+  --drum-machine-bg: mediumslateblue;
+  --title-color: rgb(250, 232, 68);
+  --drum-pad-bg: rgb(250, 232, 68);
+  --drum-pad-bg-hover: rgb(194, 177, 29);
+  --drum-pad-accent: rgb(216, 55, 27);
+  --display-bg: #fff;
+  --display-bg-limit-reached: rgb(250, 232, 68);
+  --played-sound-played: rgb(216, 55, 27);
+  --control-btn-common-bg: mediumslateblue;
+  --control-btn-bg: rgb(88, 70, 190);
+  --control-btn-bg-active: rgb(51, 28, 184);
+  --control-btn-accent: rgb(250, 232, 68);
+  --control-btn-accent-active: rgb(216, 55, 27);
+  --sound-store-bg: rgb(250, 232, 68);
+  --sound-store-border: rgb(216, 55, 27);
+  --sound-store-item-bg: rgb(250, 232, 68);
+  --sound-store-item-bg-active: rgb(51, 28, 184);
+  --sound-store-item-accent: #000;
+  --delete-store-item-button-accent: rgb(216, 55, 27);
+  --delete-store-item-button-bg-active: rgb(51, 28, 184);
+
+  --mobile: (max-width: 440px);
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background: rgb(24, 14, 14);
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media all and (max-width: 440px) {
+  body {
+    height: 100vh;
+  }
+}

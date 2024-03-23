@@ -1,0 +1,70 @@
+body {
+    font-family: Nunito, sans-serif;
+    font-size: 18px;
+    background-color: #ccc;
+}
+
+button {
+    margin: .5rem;
+    padding: .4rem .6rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-flow: column;
+    margin: auto;
+    margin-top: 3rem;
+    padding: .7rem;
+    width: 500px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+#break, #session {
+    padding: 1rem;
+    text-align: center;
+}
+
+#break span, #session span{
+    margin: .3rem;
+    font-size: 1.35rem;
+}
+
+.inner {
+    padding: .7rem;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 9px;
+}
+
+.inner #timer-left {
+    font-size: 1.8rem;
+}
+
+.outer {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.outer div {
+    margin: .6rem .8rem .9rem 0;
+}
+
+#break-decrement,
+#break-increment,
+#session-decrement,
+#session-increment,
+#start_stop,
+#reset {
+    cursor: pointer;
+}

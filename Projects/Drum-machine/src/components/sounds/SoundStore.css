@@ -1,0 +1,22 @@
+.sound-store {
+  display: flex;
+  flex-direction: column;
+  height: 170px;
+  width: 330px;
+  border: 2px solid var(--sound-store-border);
+  border-radius: var(--border-radius);
+  margin-top: 10px;
+  background-color: var(--sound-store-bg);
+}
+
+@media (max-width: 600px) {
+  .sound-store {
+    width: 345px;
+  }
+}
+
+@media all and (max-width: 440px) {
+  .sound-store {
+    width: auto;
+  }
+}

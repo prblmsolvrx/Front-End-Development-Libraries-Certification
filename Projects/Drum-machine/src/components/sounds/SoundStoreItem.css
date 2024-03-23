@@ -1,0 +1,41 @@
+.sound-store-item {
+  display: flex;
+  align-items: stretch;
+  height: 33.5px;
+  border-bottom: 2px solid var(--sound-store-item-accent);
+  background-color: var(--sound-store-item-bg);
+}
+
+.sound-store-item:nth-child(5) {
+  border-bottom: none;
+}
+
+.sound-store-item-track {
+  flex-grow: 2;
+  padding: 4px 10px;
+  color: var(--sound-store-item-accent);
+  background-color: var(--sound-store-item-bg);
+  cursor: pointer;
+}
+
+.sound-store-item-track:hover {
+  color: var(--sound-store-item-bg);
+  background-color: var(--sound-store-item-bg-active);
+}
+
+.sound-store-item-sound {
+  padding: 0 3px;
+}
+
+.delete-store-item-button {
+  width: 30px;
+  border: none;
+  cursor: pointer;
+  color: var(--delete-store-item-button-accent);
+  background-color: inherit;
+}
+
+.delete-store-item-button:hover,
+.delete-store-item-button:active {
+  background-color: var(--delete-store-item-button-bg-active);
+}

@@ -1,0 +1,44 @@
+#drum-machine {
+  font-family: var(--main-font);
+  padding: 0.6rem 1rem 1rem;
+  border-radius: var(--border-radius);
+  background: var(--drum-machine-bg);
+}
+
+.title {
+  font-family: var(--title-font);
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 0.25rem;
+  color: var(--title-color);
+  padding-bottom: 0.6rem;
+}
+
+.panes {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media all and (max-width: 600px) {
+  .title {
+    letter-spacing: 0.2rem;
+  }
+  .panes {
+    flex-direction: column;
+    width: 345px;
+  }
+}
+
+@media all and (max-width: 440px) {
+  #drum-machine {
+    height: 100vh;
+    width: 100vw;
+  }
+  .title {
+    letter-spacing: 0.1rem;
+  }
+  .panes {
+    flex-direction: column;
+    width: auto;
+  }
+}

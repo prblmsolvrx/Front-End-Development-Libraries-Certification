@@ -1,0 +1,30 @@
+.drum-pad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  color: var(--drum-pad-accent);
+  font-weight: 600;
+  border: 2px solid var(--drum-pad-accent);
+  border-radius: var(--border-radius);
+  background-color: var(--drum-pad-bg);
+  cursor: pointer;
+}
+
+.drum-pad:hover,
+.drum-pad-active {
+  background-color: var(--drum-pad-bg-hover);
+}
+
+@media (max-width: 600px) {
+  .drum-pad {
+    width: auto;
+  }
+}
+
+@media all and (max-width: 440px) {
+  .drum-pad {
+    height: 55px;
+  }
+}

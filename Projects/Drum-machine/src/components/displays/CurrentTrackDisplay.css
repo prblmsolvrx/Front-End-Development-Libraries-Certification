@@ -1,0 +1,13 @@
+.played-sounds-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 30px;
+  border-radius: var(--border-radius);
+  background-color: var(--display-bg);
+}
+
+.limit-reached {
+  background-color: var(--display-bg-limit-reached);
+}
